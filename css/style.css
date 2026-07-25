@@ -79,8 +79,8 @@ a { color: inherit; }
 
 /* ----- Layout helpers ----- */
 .wrap { max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gut); }
-.section { padding-block: clamp(2.5rem, 6vw, 5rem); }
-.section--tight { padding-block: clamp(1.75rem, 4vw, 3.25rem); }
+.section { padding-block: clamp(1.75rem, 4vw, 3.5rem); }
+.section--tight { padding-block: clamp(1.25rem, 3vw, 2.5rem); }
 
 /* ----- Typography ----- */
 h1, h2, h3, h4 { font-family: var(--f-display); font-weight: 500; line-height: 1.08; letter-spacing: -0.005em; margin: 0; color: var(--ink); }
@@ -257,12 +257,9 @@ em { font-style: italic; }
 /* =========================================================================
    Upcoming travel
    ========================================================================= */
-.upcoming { margin-bottom: clamp(2rem, 4vw, 3.2rem); }
+.upcoming { margin-bottom: clamp(1.25rem, 2vw, 2rem); }
 .upcoming > .eyebrow { margin-bottom: 0.7rem; }
 .upcoming__items { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.65rem; }
-.upcoming__items li { border: 1px solid var(--line); border-radius: 100px; padding: 0.5rem 0.9rem; color: var(--ink-soft); }
-.upcoming__items strong { color: var(--ink); }
-.upcoming__items span { margin-left: 0.35rem; color: var(--graphite); }
 
 /* =========================================================================
    News / timeline
