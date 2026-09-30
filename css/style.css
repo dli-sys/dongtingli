@@ -255,11 +255,15 @@ em { font-style: italic; }
 .shead { margin-bottom: clamp(2rem, 4vw, 3.2rem); max-width: 60ch; }
 
 /* =========================================================================
-   Upcoming travel
+   Student interest callout
    ========================================================================= */
-.upcoming { margin-bottom: clamp(1.25rem, 2vw, 2rem); }
-.upcoming > .eyebrow { margin-bottom: 0.7rem; }
-.upcoming__items { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.65rem; }
+.student-callout {
+  background: var(--mist); border-left: 3px solid var(--indigo);
+  border-radius: 0 6px 6px 0; padding: 1rem 1.1rem;
+  margin-bottom: clamp(2rem, 4vw, 3.2rem);
+}
+.student-callout p { margin: 0; max-width: 66ch; color: var(--ink-soft); }
+.student-callout strong { color: var(--ink); }
 
 /* =========================================================================
    News / timeline
