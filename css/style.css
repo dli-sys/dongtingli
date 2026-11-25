@@ -516,3 +516,9 @@ em { font-style: italic; }
 .hcard__media--contain img { object-fit: contain; background: #fff; }
 .hcard:hover .hcard__media--contain img { transform: none; }
 .shead--row .project__more { margin-bottom: 0.6rem; }
+.hero__market {
+  background: var(--mist); border-left: 3px solid var(--indigo); border-radius: 0 6px 6px 0;
+  padding: 0.7rem 1rem; margin: 0 0 0.4rem; max-width: 34em;
+  font-size: 0.98rem; color: var(--ink-soft);
+}
+.hero__market strong { color: var(--ink); }
