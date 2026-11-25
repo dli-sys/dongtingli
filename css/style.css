@@ -473,3 +473,46 @@ em { font-style: italic; }
 .divider { height: 1px; background: var(--line); border: 0; margin: 0; }
 .center { text-align: center; }
 .mt-0 { margin-top: 0; }
+
+/* =========================================================================
+   Homepage refresh: research statement, selected research, earlier news
+   ========================================================================= */
+.hero__lede {
+  font-size: clamp(1.15rem, 1.4vw, 1.4rem); line-height: 1.5; color: var(--ink);
+  max-width: 34em; margin-bottom: 1.4rem;
+}
+.shead--row { max-width: none; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1rem 2rem; }
+.highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.2rem, 2.5vw, 2rem); }
+.hcard { display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+.hcard__media {
+  border-radius: 4px; overflow: hidden; background: var(--sand);
+  border: 1px solid var(--line); box-shadow: 0 24px 50px -34px var(--shadow);
+  margin-bottom: 1rem;
+}
+.hcard__media img { width: 100%; aspect-ratio: 16/10; object-fit: cover; transition: transform 0.7s var(--ease); }
+.hcard:hover .hcard__media img { transform: scale(1.035); }
+.hcard__title { font-size: clamp(1.3rem, 2vw, 1.55rem); margin-bottom: 0.5rem; transition: color 0.2s; }
+.hcard:hover .hcard__title { color: var(--indigo); }
+.hcard__desc { color: var(--ink-soft); font-size: 0.98rem; margin-bottom: 0.8rem; }
+.hcard__venue {
+  margin-top: auto; align-self: flex-start;
+  font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.01em; color: var(--ink-soft);
+  border: 1px solid var(--line); border-radius: 100px; padding: 0.3rem 0.75rem;
+}
+@media (max-width: 860px) { .highlights { grid-template-columns: 1fr; gap: 2.2rem; } }
+
+.news__more { border-top: 1px solid var(--line); }
+.news__more > summary {
+  list-style: none; cursor: pointer; padding-block: 1.2rem;
+  font-family: var(--f-mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--indigo); transition: color 0.2s;
+}
+.news__more > summary::-webkit-details-marker { display: none; }
+.news__more > summary::after { content: " ↓"; }
+.news__more[open] > summary::after { content: " ↑"; }
+.news__more > summary:hover { color: var(--gold-ink); }
+.news__more .news__year:first-of-type { border-top: 1px solid var(--line); }
+
+.hcard__media--contain img { object-fit: contain; background: #fff; }
+.hcard:hover .hcard__media--contain img { transform: none; }
+.shead--row .project__more { margin-bottom: 0.6rem; }
